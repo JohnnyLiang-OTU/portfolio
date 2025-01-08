@@ -1,0 +1,18 @@
+.card{
+  border: 1px solid grey;
+  border-radius: 0px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: flexbox;
+}
+
+.imagen{
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
