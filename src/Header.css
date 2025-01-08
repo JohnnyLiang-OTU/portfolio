@@ -1,13 +1,42 @@
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 .header{
     display: flex;
     font-family: 'Roboto', sans-serif;
     justify-content: space-between;
     background-color: #a7532d;
     color: whitesmoke;
-    padding: 5px 5px;
+    padding: 8px 5px;
+    margin: 0;
 }
 
-.header > a{
-    text-decoration: none;
+.header-left{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.header-left > a > p{
+    margin: 3px;
+}
+
+.header-right{
+    display: flex;
+    justify-content: right;
+}
+
+.header-right > a{
+    margin: 0;
     color: whitesmoke;
+    padding: 0px 10px;
+}
+
+
+.header-right > a > h3{
+    margin: 3px;
 }

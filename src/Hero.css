@@ -1,18 +1,23 @@
 .hero-container{
-    border: 2px red solid;
     display: flex;
+    background-color: burlywood;
 }
 
 .hero-left{
-    border: 2px black solid;
+    display: flex;
     width: 50vw;
     height: 90vh;
-    background-color: grey;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left img{
+    height: inherit;
+    width: auto;
 }
 
 .hero-right{
     display: flex;
-    border: 2px lightblue solid;
     width: 50vw;
     height: 90vh;
     justify-content: center;
@@ -20,5 +25,7 @@
 }
 
 .hero-right > p{
+    width: 20vw;
     text-align: center;
+    font-size: 20px;
 }

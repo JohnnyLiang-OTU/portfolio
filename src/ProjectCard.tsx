@@ -11,7 +11,7 @@ function ProjectCard() {
     // Grab each element from data_array and build a card for each project.
 
     const [dataArray, setDataArray] = useState([
-        {id: 0, name: "UniFood", image: [mobo_1, mobo_2, mobo_3, mobo_4, mobo_5], isExpanded: false,
+        {id: 0, name: "UniFood", image: [mobo_1, mobo_2, mobo_3, mobo_4, mobo_5], isExpanded: true,
             description: "Mobile application made with Flutter that allows users to keep track of their purchases, list their groceries, locate and rate grocery stores, and see the nutritional value of their purchases."},
         {id: 1, name: "Stress Level Predictor", image:[], isExpanded: false,
             description: "Machine learning project that predicts the stress level based on given features. Backend made with Torch and Django. Frontend made with Django template engine."},
@@ -34,7 +34,10 @@ function ProjectCard() {
         <div className="project-card-container">
             {dataArray.map((project) => (
                 <div key={project.id} className="project-card" onClick={() => toggleExpanded(project.id)}>
-                    <h2 className="card-name">{project.name}</h2>
+                    <div className="card-name">
+                        <p style={{rotate: project.isExpanded ? '90deg' : '0deg'}}>&rsaquo;</p>
+                        <h2>&nbsp;{project.name}</h2>
+                    </div>
 
                     <div className="card-images"
                     style={{
@@ -43,7 +46,7 @@ function ProjectCard() {
                         overflow: 'hidden',
                         transition: 'max-height 0.3s ease, opacity 0.3s ease',
                         margin: project.isExpanded ? '16px 0' : '0',
-                      }}>
+                      }}    >
                     {project.image.map((image) => (
                         <img src={image} alt="project image" />
                     ))}
