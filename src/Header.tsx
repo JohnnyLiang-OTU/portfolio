@@ -2,9 +2,9 @@ import './Header.css'
 function Header(){
     return (
         <div className="header">
-            <h1>Home</h1>
-            <h1>Projects</h1>
-            <h1>Interests / Hobbies</h1>
+            <a href='/'><h3>Home</h3></a>
+            <a href='/canvas'><h3>Projects</h3></a>
+            <h3>Interests / Hobbies</h3>
         </div>
     )
 }
