@@ -21,21 +21,24 @@
 
 .card-name {
   display: flex;
-    background-color: #8f2323;
-    color: whitesmoke;
-    padding: 3px;
-    font-family: monospace, 'Roboto', sans-serif;
+  background-color: #8f2323;
+  color: whitesmoke;
+  padding: 4px;
+  padding-left: 20px;
+  font-family: monospace, 'Roboto', sans-serif;
+  align-items: center;
 }
 
-.card-name{}
-
-.card-images{
+.card-images {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center-align the images */
+  gap: 8px; /* Add spacing between images */
+  overflow: hidden; /* Prevent content overflow */
 }
 
-.card-images > img {
-  height: 450px;
-  width: auto;
-  margin: 0px 10px;
+.card-images img {
+  /* max-width: calc(33.333% - 16px); Limit width to one-third of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images fit their boxes */
+  min-width: 100px; /* Set a minimum size to avoid being too small */
 }
