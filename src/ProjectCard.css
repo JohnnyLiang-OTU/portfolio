@@ -1,44 +1,58 @@
 .project-card-container {
-    margin: 30px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
-  border: 2px black solid;
-  margin: 10px;
-  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-name {
+  background-color: black;
   display: flex;
-  background-color: #8f2323;
-  color: whitesmoke;
-  padding: 4px;
-  padding-left: 20px;
-  font-family: monospace, 'Roboto', sans-serif;
   align-items: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
 }
 
-.card-images {
+.card-name p {
+  transition: transform 0.3s ease;
+}
+
+.description {
+  margin: 5px;
+}
+
+.masonry-grid {
+  display: flex; /* Enables horizontal stacking of columns */
+  gap: 16px; /* Space between columns */
+}
+
+.masonry-grid-column {
   display: flex;
-  justify-content: center; /* Center-align the images */
-  gap: 8px; /* Add spacing between images */
-  overflow: hidden; /* Prevent content overflow */
+  flex-direction: row; /* Stack images vertically in each column */
+  gap: 16px; /* Space between images in a column */
 }
 
-.card-images img {
-  /* max-width: calc(33.333% - 16px); Limit width to one-third of the container */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure images fit their boxes */
-  min-width: 100px; /* Set a minimum size to avoid being too small */
+.masonry-image {
+  display: block;
+  width: 30%;
+  height: auto;
+  max-width: 100%; /* Prevent image from overflowing the column width */
+  max-height: 100%; /* Scale down large images proportionally */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.masonry-image:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
