@@ -39,6 +39,7 @@
   display: flex;
   flex-direction: row; /* Stack images vertically in each column */
   gap: 16px; /* Space between images in a column */
+  padding: 16px;
 }
 
 .masonry-image {

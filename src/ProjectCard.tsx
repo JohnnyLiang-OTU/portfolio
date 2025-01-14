@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import Masonry from "react-masonry-css";
-import { CSSProperties } from "react";
 
 import "./ProjectCard.css"
 
