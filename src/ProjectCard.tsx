@@ -104,11 +104,11 @@ function ProjectCard() {
 
   return (
     <>
-      <div className="project-card-container">
+      <div id="section-project" className="project-card-container">
         {dataArray.map((project) => (
           <div
             key={project.id}
-            className="project-card"
+            className={`project-card`}
             ref={(el) => (cardRefs.current[project.id] = el)}
           >
             <div 
@@ -138,7 +138,7 @@ function ProjectCard() {
                     src={image}
                     loading="lazy"
                     alt="project image"
-                    className="masonry-image cursor-pointer hover:opacity-90 transition-opacity"
+                    className={`masonry-image cursor-pointer hover:opacity-90 transition-opacity project-${project.id}`}
                     onClick={() => handleImageClick(image)}
                   />
                 ))}

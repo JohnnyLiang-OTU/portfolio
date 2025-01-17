@@ -2,16 +2,11 @@ import "./Hero.css"
 function Hero(){
     return(
         <div
+        id="section-hero"
         className="hero-container">
             <div className="hero-left">
 
-                <p
-                style={{
-                    fontSize: 200,
-                    color: "whitesmoke",
-                    textAlign: "center"
-                }}>
-                    Johnny Liang</p>
+                <p className="name">Johnny Liang</p>
                 <p
                 style={{
                     color: "whitesmoke",

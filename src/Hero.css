@@ -35,6 +35,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: "Scope One", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero-right > p{
@@ -43,15 +46,9 @@
     font-size: 20px;
 }
 
-.image-container {
-    flex: 1; /* Optional: Adjusts each container's size */
-    display: flex;
-  }
-  
-  .image-container.left {
-    justify-content: flex-start; /* Aligns the image to the left */
-  }
-  
-  .image-container.right {
-    justify-content: flex-end; /* Aligns the image to the right */
-  }
+
+.name {
+    font-size: 200px;
+    color: whitesmoke;
+    text-align: center;
+}

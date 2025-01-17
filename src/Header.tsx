@@ -6,8 +6,8 @@ function Header(){
                 <a href='/'><p>JOHNNY LIANG</p></a>
             </div>
             <div className='header-right'>
-                <a href='/'><h3>Home</h3></a>
-                <a href='/canvas'><h3>Projects</h3></a>
+                <a href='/#section-hero'><h3>Home</h3></a>
+                <a href='/#section-project'><h3>Projects</h3></a>
                 <a href="#"><h3>Interests</h3></a>
             </div>
         </div>

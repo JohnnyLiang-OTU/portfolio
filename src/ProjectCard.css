@@ -44,6 +44,7 @@
   flex-direction: row; /* Stack images vertically in each column */
   gap: 16px; /* Space between images in a column */
   padding: 16px;
+  height: auto;
 }
 
 .masonry-image {
@@ -58,8 +59,8 @@
 
 .masonry-image:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 @keyframes shake {
@@ -78,4 +79,14 @@
   100% {
     transform: translateX(0);
   }
+}
+
+.project-0 {
+  display: block;
+  /* width: 30%; */
+  height: 60vh;
+  max-width: 100%; /* Prevent image from overflowing the column width */
+  max-height: 100%; /* Scale down large images proportionally */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
