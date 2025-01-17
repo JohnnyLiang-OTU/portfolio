@@ -1,20 +1,32 @@
 .hero-container{
     display: flex;
-    background-color: #fdfdfd;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.hero-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./assets/background_img.jpg');
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(10px);  */
+    z-index: -1; /* Push it behind the content */
 }
 
 .hero-left{
     display: flex;
     width: 50vw;
-    height: 95vh;
+    height: 100vh;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.hero-left img{
-    height: inherit;
-    width: auto;
-}
 
 .hero-right{
     display: flex;
@@ -22,6 +34,7 @@
     height: 90vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .hero-right > p{
@@ -29,3 +42,16 @@
     text-align: center;
     font-size: 20px;
 }
+
+.image-container {
+    flex: 1; /* Optional: Adjusts each container's size */
+    display: flex;
+  }
+  
+  .image-container.left {
+    justify-content: flex-start; /* Aligns the image to the left */
+  }
+  
+  .image-container.right {
+    justify-content: flex-end; /* Aligns the image to the right */
+  }

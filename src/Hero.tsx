@@ -1,15 +1,27 @@
-import portrait from "./assets/test_portrait.png"
 import "./Hero.css"
 function Hero(){
     return(
-        <div className="hero-container">
+        <div
+        className="hero-container">
             <div className="hero-left">
-                <img src={portrait} alt="hero-portrait"></img>
+
+                <p
+                style={{
+                    fontSize: 200,
+                    color: "whitesmoke",
+                    textAlign: "center"
+                }}>
+                    Johnny Liang</p>
+                <p
+                style={{
+                    color: "whitesmoke",
+                    textAlign: "center",
+                    fontSize: 50,
+                }}
+                >Web Development and Data Analysis</p>
             </div>
             <div className="hero-right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam fugiat 
-                    et tempore mollitia ipsum rem, molestias quod nam a quae similique necessitatibus 
-                    deserunt dicta facilis fuga eum quasi ipsa.</p>
+                <img src="https://placehold.co/500x700"></img>
             </div>
         </div>
     );

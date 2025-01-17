@@ -9,10 +9,13 @@ a{
     display: flex;
     font-family: 'Roboto', sans-serif;
     justify-content: space-between;
-    background-color: #a7532d;
     color: whitesmoke;
     padding: 8px 5px;
     margin: 0;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
 }
 
 .header-left{
@@ -42,3 +45,4 @@ a{
 .header-right > a > h3{
     margin: 3px;
 }
+
