@@ -1,4 +1,6 @@
 import "./Hero.css"
+
+import portrait from "./assets/portrait.png"
 function Hero(){
     return(
         <div
@@ -16,7 +18,7 @@ function Hero(){
                 >Web Development and Data Analysis</p>
             </div>
             <div className="hero-right">
-                <img src="https://placehold.co/500x700"></img>
+                <img className="portrait" src={portrait}></img>
             </div>
         </div>
     );

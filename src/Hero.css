@@ -46,9 +46,22 @@
     font-size: 20px;
 }
 
-
 .name {
-    font-size: 200px;
+    font-size: 160px;
     color: whitesmoke;
     text-align: center;
 }
+
+.portrait {
+    width: 24vw; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    filter: grayscale(100%);
+  }
+
+  .portrait:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+  }
